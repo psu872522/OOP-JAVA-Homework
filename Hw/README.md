@@ -342,5 +342,157 @@ public class BinaryConvert {
 }
 ```
 
-### Homework9결과화면
+# Homework9결과화면
 ![](../images/hw9.png)
+
+### Homework10
+``` java
+package homework;
+
+import java.util.Random;
+
+public class Homework10 {
+    public static void main(String[] args) {
+
+        int arrayCount = args.length > 0 ? Integer.parseInt(args[0]) : 100;
+        int maxValue = args.length > 1 ? Integer.parseInt(args[1]) : 100;
+        int binSize = args.length > 2 ? Integer.parseInt(args[2]) : 10;
+        int scale = args.length > 3 ? Integer.parseInt(args[3]) : 1;
+
+        int[] data = new int[arrayCount];
+        Random rand = new Random();
+        for (int i = 0; i < arrayCount; i++) {
+            data[i] = rand.nextInt(maxValue); 
+        }
+
+        int binCount = maxValue / binSize;
+        int[] count = new int[binCount];
+
+        for (int value : data) {
+            int binIndex = value / binSize;
+            if (binIndex >= binCount) binIndex = binCount - 1; 
+            count[binIndex]++;
+        }
+
+        for (int i = 0; i < binCount; i++) {
+            int rangeStart = i * binSize;
+            int rangeEnd = rangeStart + binSize - 1;
+            System.out.printf("%d~%d\t", rangeStart, rangeEnd);
+
+            int barLength = count[i] / scale;
+            for (int j = 0; j < barLength; j++) {
+                System.out.print("#");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+# Homework10결과화면
+![](../images/hw10.png)
+
+### Homework11
+``` java
+package homework;
+
+	import java.util.Arrays;
+
+	public class Homework11 {
+	    public static void main(String[] args) {
+	        int[] data = {23, 34, 56, 12, 34, 56, 67};
+
+	        System.out.println("arithmetic mean = " + arithmeticMean(data));
+	        System.out.println("geometric mean = " + geometricMean(data));
+	        System.out.println("harmonic mean = " + harmonicMean(data));
+	        System.out.println("median = " + median(data));
+	    }
+
+	    // 산술평균
+	    static double arithmeticMean(int[] data) {
+	        double sum = 0;
+	        for (int x : data) sum += x;
+	        return sum / data.length;
+	    }
+
+	    // 기하평균
+	    static double geometricMean(int[] data) {
+	        double product = 1;
+	        for (int x : data) product *= x;
+	        return Math.pow(product, 1.0 / data.length);
+	    }
+
+	    // 조화평균
+	    static double harmonicMean(int[] data) {
+	        double sumOfReciprocals = 0;
+	        for (int x : data) sumOfReciprocals += 1.0 / x;
+	        return data.length / sumOfReciprocals;
+	    }
+
+	    // 중앙값
+	    static double median(int[] data) {
+	        int[] sorted = data.clone();
+	        Arrays.sort(sorted);
+	        int n = sorted.length;
+	        if (n % 2 == 1) {
+	            return sorted[n / 2];
+	        } else {
+	            return (sorted[n / 2 - 1] + sorted[n / 2]) / 2.0;
+	        }
+	    }
+	}
+
+``` 
+# Homework11결과화면
+![](../images/hw11.png)
+
+### Homework12
+``` java
+package homework;
+
+public class Homework12 {
+    public static void main(String[] args) {
+
+        System.out.println("int 78 = " + intToBinaryString(78));
+        System.out.println("int -78 = " + intToBinaryString(-78));
+        System.out.println("int -34 = " + intToBinaryString(-34));
+
+        printDoubleBits(2.3);
+        printDoubleBits(13.875);
+        printDoubleBits(45.5625);
+    }
+
+    static String intToBinaryString(int n) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 31; i >= 0; i--) {
+            sb.append((n >> i) & 1);
+            if (i % 8 == 0 && i != 0) sb.append(" ");
+        }
+        return sb.toString();
+    }
+
+    static void printDoubleBits(double value) {
+        long bits = Double.doubleToLongBits(value);
+
+        String sign = ((bits >> 63) & 1) == 1 ? "1" : "0";
+
+        StringBuilder exponent = new StringBuilder();
+        for (int i = 62; i >= 52; i--) {
+            exponent.append((bits >> i) & 1);
+        }
+
+        StringBuilder mantissa = new StringBuilder();
+        for (int i = 51; i >= 0; i--) {
+            mantissa.append((bits >> i) & 1);
+        }
+
+        System.out.println("value = " + value);
+        System.out.println("sign = " + sign);
+        System.out.println("exponent = " + exponent + " (" + (Long.parseLong(exponent.toString(), 2) - 1023) + ")");
+        System.out.println("mantissa = " + mantissa);
+        System.out.println();
+    }
+}
+``` 
+# Homework12결과화면
+![](../images/hw12.png)
