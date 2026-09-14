@@ -494,5 +494,5 @@ public class Homework12 {
     }
 }
 ``` 
-# Homework12결과화면
+### Homework12결과화면
 ![](../images/hw12.png)
