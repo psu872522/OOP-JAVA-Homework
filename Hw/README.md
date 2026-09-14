@@ -262,7 +262,7 @@ public class Homework8 {
     public static void main(String[] args) {
         int students = 30; // 학생 수
         int subjects = 4; // 국어, 영어, 수학, 과학
-        int[][] score = new int[students][subjects + 1]; // 마지막 칸은 합계용
+        int[][] score = new int[students][subjects + 1]; 
 
         for (int i = 0; i < students; i++) {
             int sum = 0;
