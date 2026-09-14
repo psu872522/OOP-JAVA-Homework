@@ -284,7 +284,7 @@ public class Homework8 {
 }                        
 ```
 
-# Homework8결과화면
+### Homework8결과화면
 ![](../images/hw8.png)
 
 ### Homework9
@@ -342,7 +342,7 @@ public class BinaryConvert {
 }
 ```
 
-# Homework9결과화면
+### Homework9결과화면
 ![](../images/hw9.png)
 
 ### Homework10
@@ -389,7 +389,7 @@ public class Homework10 {
 }
 ```
 
-# Homework10결과화면
+### Homework10결과화면
 ![](../images/hw10.png)
 
 ### Homework11
@@ -443,7 +443,7 @@ package homework;
 	}
 
 ``` 
-# Homework11결과화면
+### Homework11결과화면
 ![](../images/hw11.png)
 
 ### Homework12
