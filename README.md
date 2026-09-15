@@ -645,5 +645,4 @@ public class Homework14 {
 ```
 
 ### Homework14결과화면
-![](images/hw14-1.png)
-![](images/hw14-2.png)
+![](images/hw14-1.png) ![](images/hw14-2.png)
