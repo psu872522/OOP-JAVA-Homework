@@ -69,7 +69,7 @@ public class Homework1 {
 }
 ```
 ### Homework1결과화면 
-![](../images/hw1.png)
+![](images/hw1.png)
 
 ### Homework2
 ```java
@@ -97,7 +97,7 @@ public class Homework2 {
 ```
 
 ### Homework2결과화면
-![](../images/hw2.png)
+![](images/hw2.png)
 
 ### Homework3
 ```java
@@ -123,7 +123,7 @@ public class Homework3 {
 ```
 
 ### Homework3결과화면
-![](../images/hw3.png)
+![](images/hw3.png)
 
 ### Homework4
 ``` java
@@ -142,7 +142,7 @@ public class Homework4 {
 ```
 
 ### Homework4결과화면
-![](../images/hw4.png)
+![](images/hw4.png)
 
 ### Homework5
 ```java
@@ -178,7 +178,7 @@ public class Homework5 {
 ```
 
 ### Homework5결과화면
-![](../images/hw5.png)
+![](images/hw5.png)
 
 ### Homework6
 ```java
@@ -210,7 +210,7 @@ public class Homework6 {
 ```
 
 ### Homework6결과화면
-![](../images/hw6.png)
+![](images/hw6.png)
 
 ### Homework7
 ```java
@@ -252,7 +252,7 @@ public class Homework7 {
 ```
 
 ### Homework7결과화면
-![](../images/hw7.png)
+![](images/hw7.png)
 
 ### Homework8
 ``` java
@@ -285,7 +285,7 @@ public class Homework8 {
 ```
 
 ### Homework8결과화면
-![](../images/hw8.png)
+![](images/hw8.png)
 
 ### Homework9
 ``` java
@@ -343,7 +343,7 @@ public class BinaryConvert {
 ```
 
 ### Homework9결과화면
-![](../images/hw9.png)
+![](images/hw9.png)
 
 ### Homework10
 ``` java
@@ -390,7 +390,7 @@ public class Homework10 {
 ```
 
 ### Homework10결과화면
-![](../images/hw10.png)
+![](images/hw10.png)
 
 ### Homework11
 ``` java
@@ -444,7 +444,7 @@ package homework;
 
 ``` 
 ### Homework11결과화면
-![](../images/hw11.png)
+![](images/hw11.png)
 
 ### Homework12
 ``` java
@@ -495,4 +495,4 @@ public class Homework12 {
 }
 ``` 
 ### Homework12결과화면
-![](../images/hw12.png)
+![](images/hw12.png)
